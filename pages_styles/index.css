@@ -1,0 +1,31 @@
+header {
+    text-align: center;
+}
+
+.nav {
+    background-color: #6B6B6B;
+    overflow: hidden;
+}
+
+.nav a {
+    float: left; /*Float encaixa os elementos na direita ou na esquerda*/
+    color: #DEDAD0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav input {
+    float: right;
+}
+
+.nav a:hover {
+    background-color: #909090;
+    color: black;
+}
+
+#ativo {
+    background-color: #909090;
+    color: #FFFFFF;
+}
