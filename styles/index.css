@@ -1,0 +1,53 @@
+body {
+    background-color: #5C5757;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.nav {
+    background-color: #6B6B6B;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.nav a {
+    float: left; /*Float encaixa os elementos na direita ou na esquerda*/
+    color: #DEDAD0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav input {
+    float: right;
+    padding: 12px;
+    border: none;
+    margin-top: 8px; /*Coloca a caixa de pesquisa um pouco mais longe do "topo" da nav*/
+    margin-right: 16px; /*Coloca a caixa de pesquisa um pouco mais longe da "direita" da nav*/
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: #909090;
+    color: black;
+}
+
+#ativo {
+    background-color: #909090;
+    color: #FFFFFF;
+}
+
+.secaoB {
+    background-color: #d9d9d9;
+    width: 1350px;
+    height: 400px;
+    margin-top: 16px;
+}
+
+.principais {
+    background-color: #6b6b6b;
+}
