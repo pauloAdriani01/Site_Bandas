@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRock - Home</title>
     <link rel="stylesheet" href="../styles/index.css">
-    <title>Home - Web Rock</title>
 </head>
-
 <body>
-
     <header>
-        <h1>Bem-vindo(a) ao Web Rock!</h1>
-        <h3>O melhor site para descobrir e discutir sobre bandas de rock!</h3>
+        <div id="introd"> 
+            <img src="../imgs/logo.png" alt="Logo WebRock" title="Logo WebRock">
+            <h2>O melhor site para descobrir e discutir sobre bandas de rock</h2>
+            <hr>
+        </div>
+        <nav id ="navbar">
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="bandas.html">Bandas</a>
+                <a href="discussoes.html">Discussões</a>
+                <a href="noticias.html">Notícias</a>
+            </div>
+            <div id="pesquisa">
+                <input type="text" placeholder="Pesquisar...">
+                <button><img src="../imgs/lupa_pesquisa.png" alt="Lupa de Pesquisa" title="Lupa de Pesquisa"></button>
+            </div>
+        </nav>
     </header>
-
     <main>
 
-        <section class="secaoA">
-            <div class="nav">
-                <a id="ativo" href="index.html"><strong>Home</strong></a>
-                <a href="bandas.html"><strong>Bandas</strong></a>
-                <a href="discussoes.html"><strong>Discussões</strong></a>
-                <a href="noticias.html"><strong>Notícias</strong></a>
-                <input type="text" placeholder="Pesquisar...">
-            </div>
-        </section>
-
-        <section class="secaoB">
-            <div class="principais" id="bandas">
-                <p>Bandas</p>
-            </div>
-            <div class="principais" id="discussoes">
-                <p>Discussões</p>
-            </div>
-            <div class="principais" id="noticias">
-                <p>Notícias</p>
-            </div>
-        </section>
-
     </main>
-
     <footer>
 
     </footer>
-
 </body>
-
 </html>
