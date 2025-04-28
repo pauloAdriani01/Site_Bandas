@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebRock</title>
+    <title>WebRock - Home</title>
     <link rel="icon" href="../imgs/logo_webrock.png">
     <link rel="stylesheet" href="../styles/index.css">
 </head>
@@ -11,16 +11,17 @@
     <nav>
         <div id="navSup">
         <div id="nav-pesquisa">
-            <input type="text" name="barraPesquisa">
-            <input type="button" value="Pesquisar">
+            <input type="text" name="barraPesquisa" id="barraPesquisa">
+            <input type="button" value="Pesquisar" class="botao">
         </div>
-        <input type="button" value="Login">
+        <input type="button" value="Login" class="botao">
         </div>
         <div id="navInf">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Posts</a></li>
+                <li><a href="index.html" id="ativo">Home</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="bandas.html">Bandas</a></li>
             </ul>
         </div>
     </nav>
@@ -33,22 +34,37 @@
     <main>
         <article id="artigo-principal">
             <img src="../imgs/placeholder.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, nemo quia minus deserunt incidunt, cupiditate consectetur dolorem, at fuga beatae fugit qui laboriosam! Quo amet adipisci distinctio aspernatur delectus quibusdam.</p>
         </article>
         <aside>
             <article class="artigo-aside">
                 <img src="../imgs/placeholder.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro mollitia ipsum laboriosam nobis veritatis exercitationem saepe ab et aliquid consequuntur quibusdam suscipit ipsam cupiditate vel perferendis, corrupti adipisci minima quo!</p>
             </article>
             <article class="artigo-aside">
                 <img src="../imgs/placeholder.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis reiciendis facilis ut nemo. Consectetur sapiente temporibus unde ipsum veniam. Explicabo numquam, officia fugiat quod iusto eum modi tempore ad hic?</p>
             </article>
             <article class="artigo-aside">
                 <img src="../imgs/placeholder.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, dignissimos earum. Quo voluptates, necessitatibus omnis accusantium fuga repellendus amet voluptatem nostrum quod porro ducimus neque nam? Similique, quo. Sed, consequuntur?</p>
             </article>
         </aside>
     </main>
     <footer>
         <div id="footerPT1">
             <p>Nos acompanhe em nossas redes sociais!</p>
+            <div id="midias">
+                <div class="rede">
+                    <img src="../imgs/insta.png" alt="Instagram">
+                </div>
+                <div class="rede">
+                    <img src="../imgs/x.png" alt="X">
+                </div>
+                <div class="rede">
+                    <img src="../imgs/youtube.png" alt="youtube">
+                </div>
+            </div>
         </div>
         <div id="footerPT2">
             <p>Copyright &copy;Equipe WebRock (2025-2025)</p>
