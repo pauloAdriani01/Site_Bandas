@@ -6,7 +6,7 @@ html, body {
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: #555555;
+    background: radial-gradient(#555555, #444444);
     color: #FFFFFF;
     font-weight: bold;
 }
@@ -18,6 +18,10 @@ nav {
     padding: 0;
     display: flex;
     flex-direction: column;
+    /* top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1; */
 }
 
 #navSup {
@@ -30,7 +34,7 @@ nav {
 
 #barraPesquisa {
     padding: 5px;
-    border: 2px solid #6D2B2C;
+    border: 2px solid #B42929;
     border-radius: 5px;
     background-color: #979797;
     color: #FFFFFF;
@@ -39,12 +43,12 @@ nav {
 }
 
 #barraPesquisa:focus {
-    border: 2px solid #8f383a;
+    border: 2px solid #e23434;
     outline: none;
 }
 
 .botao {
-    background: linear-gradient(to right, #6D2B2C, #606163);
+    background: linear-gradient(to right, #B42929, #606163);
     border: none;
     outline: none;
     color: #FFFFFF;
@@ -75,8 +79,18 @@ a {
     font-weight: bolder;
 }
 
-#atv {
-    
+#ativo {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: troca_cor;
+}
+
+@keyframes troca_cor {
+    0% { color: #B42929;}
+    25% { color: #832b2b;}
+    50% { color: #aa4646;}
+    75% { color: #832b2b;}
+    100% { color: #B42929;}
 }
 
 /* Corpo */
@@ -91,11 +105,21 @@ p {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    padding: 10px;
+    padding: auto;
+    background-color: #ffffff36;
+    width: 70%;
+    margin-bottom: 30px;
+    border-radius: 5%;
+}
+
+#conteudo-principal {
+    filter: drop-shadow(0px 0px 15px #333333);
 }
 
 article img {
-    width: 60%;
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 5%;
 }
 
 /* Rodápe */
@@ -111,14 +135,19 @@ footer {
     align-items: center;  
 }
 
+.rede {
+    width: 100px;
+}
+
 #midias {
     display: flex;
+    justify-content: space-around;
     margin: auto;
     padding: 10px;
 }
 
 #midias img {
-    width: 20%;
+    width: 40%;
 }
 
 #footerPT2 {

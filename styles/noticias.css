@@ -30,7 +30,7 @@ nav {
 
 #barraPesquisa {
     padding: 5px;
-    border: 2px solid #6D2B2C;
+    border: 2px solid #B42929;
     border-radius: 5px;
     background-color: #979797;
     color: #FFFFFF;
@@ -39,12 +39,12 @@ nav {
 }
 
 #barraPesquisa:focus {
-    border: 2px solid #8f383a;
+    border: 2px solid #e23434;
     outline: none;
 }
 
 .botao {
-    background: linear-gradient(to right, #6D2B2C, #606163);
+    background: linear-gradient(to right, #B42929, #606163);
     border: none;
     outline: none;
     color: #FFFFFF;
@@ -73,4 +73,18 @@ a {
     line-height: 1.5rem;
     color: #FFFFFF;
     font-weight: bolder;
+}
+
+#ativo {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: troca_cor;
+}
+
+@keyframes troca_cor {
+    0% { color: #B42929;}
+    25% { color: #832b2b;}
+    50% { color: #aa4646;}
+    75% { color: #832b2b;}
+    100% { color: #B42929;}
 }
