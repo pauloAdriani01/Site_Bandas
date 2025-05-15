@@ -1,5 +1,9 @@
 /* Configurações Gerais */
 
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+@import url(https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Tagesschrift&display=swap);
+
 html, body {
     margin: 0;
     padding: 0;
@@ -129,8 +133,75 @@ a {
     filter: drop-shadow(0px 0px 15px #333333);
 }
 
+#conteudo_post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 p {
     margin: 0;
     padding: 10px;
     filter: drop-shadow(10px 10px 10px #111111);
+}
+
+#conteudo_usuario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.foto_usuario {
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#info_usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botao_mais {
+    background: linear-gradient(to right, #B42929, #222222);
+    border: none;
+    outline: none;
+    font-family: "Comic Relief", system-ui;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Rodápe */
+
+footer {
+    margin-top: 20px;
+}
+
+#footerPT1 {
+    background: radial-gradient(#222222, #111111); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.rede {
+    width: 100px;
+}
+
+#midias {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px;
+}
+
+#midias img {
+    width: 40%;
+}
+
+#footerPT2 {
+    background: radial-gradient(#111111, #000000);
 }
