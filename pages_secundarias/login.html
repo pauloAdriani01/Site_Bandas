@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
-    <button class="botao"><a href="">Voltar</a></button>
+    <header>
+    <button class="botao"><a href="../pages/index.html">Voltar</a></button>
+    </header>
+    <main>
+        <div id="form_container">
+            <form action="">
+                <h2>Login</h2>
+                <div class="input_informacao">
+                    <label for="email">E-mail: </label>
+                    <input type="text" name="email" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="input_informacao">
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="input_informacao" id="manter_conectado">
+                    <label for="manter">Manter Conectado?</label>
+                    <input type="checkbox" name="manter" id="manter">
+                </div>
+                <div class="input_informacao">
+                    <input type="submit" value="Login" class="botao_interno">
+                </div>
+                <div class="input_informacao">
+                    <label for="botao_interno">Não tem conta?</label>
+                    <input type="button" value="Criar Conta" class="botao_interno">
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
