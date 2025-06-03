@@ -10,7 +10,24 @@ html, body {
 }
 
 body {
-    background: radial-gradient(#555555, #444444);
+    background: linear-gradient(132deg, #974343, #444444, #555555, #693131);
+    background-size: 400% 400%;
+    animation: degradeBackground 15s ease infinite;
+}
+
+@keyframes degradeBackground {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Cabeçalho */
+
+#titulo {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Tagesschrift", system-ui;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 1));
 }
 
 /* Login */
@@ -38,7 +55,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 3rem;
     padding: auto;
     font-family: "Tagesschrift", system-ui;
 }
@@ -53,7 +70,7 @@ form {
     background: radial-gradient(#444444, #333333);
     color: #FFFFFF;
     border-radius: 5px;
-    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));; 
+    filter: drop-shadow(0 0 25px rgba(0, 0, 0, 1));; 
 }
 
 .input_informacao {

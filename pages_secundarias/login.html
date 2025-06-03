@@ -6,10 +6,15 @@
     <title>WebRock - Login</title>
     <link rel="icon" href="../imgs/logo_webrock.png">
     <link rel="stylesheet" href="../styles/login.css">
+    <script src="../script/script.js" defer></script>
 </head>
 <body>
     <header>
     <button class="botao"><a href="../pages/index.html">Voltar</a></button>
+    <div id="titulo">
+        <h1>WebRock</h1>
+        <h3>O Maior Blog de Bandas de Rock da Internet!</h3>
+    </div>
     </header>
     <main>
         <div id="form_container">
@@ -28,11 +33,11 @@
                     <input type="checkbox" name="manter" id="manter">
                 </div>
                 <div class="input_informacao">
-                    <input type="submit" value="Login" class="botao_interno">
+                    <input type="submit" value="Login" class="botao_interno" id="botao_login">
                 </div>
                 <div class="input_informacao">
                     <label for="botao_interno">Não tem conta?</label>
-                    <input type="button" value="Criar Conta" class="botao_interno">
+                    <input type="button" value="Criar Conta" class="botao_interno" id="botao_criarConta">
                 </div>
             </form>
         </div>
