@@ -6,7 +6,8 @@
     <title>WebRock - Notícias</title>
     <link rel="icon" href="../imgs/logo_webrock.png">
     <link rel="stylesheet" href="../styles/style.css">
-    <script src="../script/script.js" defer></script>
+    <script src="../scripts/script.js" defer></script>
+    <script src="../scripts/mudaCor.js" defer></script>
 </head>
 <body>
     <nav>
@@ -15,7 +16,11 @@
                 <input type="text" name="barraPesquisa" id="barraPesquisa">
                 <input type="submit" value="Pesquisar" id="botao_pesquisa" class="botao">
             </div>
-        <button class="botao"><a href="../pages_secundarias/login.html">Login</a></button>
+            <button class="botao"><a href="../pages_secundarias/login.html">Login</a></button>
+            <div id="cor_fundo">
+                <label for="trocarFundo">Modo Claro</label>
+                <input type="checkbox" name="trocarFundo" id="trocarFundo">
+            </div>
         </div>
         <div id="navInf">
             <ul>

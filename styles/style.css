@@ -68,6 +68,14 @@ nav {
     border-radius: 5px;
 }
 
+#cor_fundo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: auto;
+}
+
 #navInf {
     padding: 20px;
     background: radial-gradient(#222222, #111111); 

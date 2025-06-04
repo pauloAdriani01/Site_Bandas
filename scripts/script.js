@@ -62,7 +62,7 @@ if (pag_ativa.includes("login")) {
     }
 
     function funCriarConta() {
-        alert("Criando sua conta...");
+        alert("Redirecionando para a página de criar conta...");
         location.reload();
     }
 
