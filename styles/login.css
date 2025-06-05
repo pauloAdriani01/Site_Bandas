@@ -81,6 +81,16 @@ form {
     padding: 6px;
 }
 
+.barraInserir {
+    padding: 5px;
+    border: 2px solid #B42929;
+    border-radius: 5px;
+    background-color: #979797;
+    font-family: "Comic Relief", system-ui;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
 label {
     padding: 5px;
 }

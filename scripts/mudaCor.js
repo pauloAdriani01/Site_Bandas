@@ -2,16 +2,17 @@
 
 const pag_ativa_cor = location.pathname.toLowerCase();
 
+//Configurações Gerais
 const obj_trocarFundo = document.querySelector("#trocarFundo"); //Pega o checkbox que muda a cor do fundo
 
 const obj_body = document.querySelector("body"); //Pega o corpo do site, onde o principal fundo está
 
+const array_barraPesquisa = document.querySelectorAll(".barraPesquisa");
+
 //Navbar
 const obj_navSup = document.querySelector("#navSup");
-const obj_navInf = document.querySelector("#navInf");
 
-// const obj_botaoLogin = document.querySelector(".botao");
-// const obj_link_botaoLogin = obj_botaoLogin.querySelector("a"); //Pega o child do botao login
+const obj_navInf = document.querySelector("#navInf");
 
 const array_a = document.querySelectorAll("a"); //Pega todos os links dentro do site
 
@@ -51,8 +52,6 @@ function funMudaFundo() {
             obj_a.style.color = '#000000'; 
         })
 
-        // obj_link_botaoLogin.style.color = '#FFFFFF';
-
         //Main
 
         /* --- Index ---*/
@@ -65,6 +64,7 @@ function funMudaFundo() {
         }
 
         /* --- Noticias --- */
+
         array_noticia.forEach(obj_noticia => {
             obj_noticia.style.background = '#A7A7A7';
         })

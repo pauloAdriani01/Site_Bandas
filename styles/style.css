@@ -41,7 +41,7 @@ nav {
     background: radial-gradient(#111111, #000000);
 }
 
-#barraPesquisa {
+.barraPesquisa {
     padding: 5px;
     border: 2px solid #B42929;
     border-radius: 5px;
@@ -163,6 +163,10 @@ article img {
 }
 
 /* --- Notícias --- */
+
+#pesquisa_conteudo {
+    margin-bottom: 1.5rem;
+}
 
 .noticia {
     display: flex;
@@ -291,4 +295,20 @@ footer {
 
 #footerPT2 {
     background: radial-gradient(#111111, #000000);
+}
+
+/* ------ RESPONSIVIDADE ------ */
+
+@media (min-width: 768px) {
+
+    /* --- Notícias --- */
+    #container_noticias {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .noticia {
+        width: 30%;
+    }
+
 }

@@ -10,8 +10,8 @@
 <body>
     <nav>
         <div id="navSup">
-            <div id="nav-pesquisa">
-                <input type="text" name="barraPesquisa" id="barraPesquisa">
+            <div id="nav_pesquisa">
+                <input type="text" name="barraPesquisa" class="barraPesquisa" placeholder="Pesquisar algum assunto...">
                 <input type="submit" value="Pesquisar" id="botao_pesquisa" class="botao">
             </div>
             <a href="login.html" class="botao">Login</a>
@@ -31,20 +31,26 @@
     </nav>
     <header>
         <h1 id="titulo">Últimas Notícias</h1>
+        <div id="pesquisa_conteudo">
+            <input type="text" name="barraPesquisa" class="barraPesquisa" placeholder="Pesquise por notícia...">
+            <input type="submit" value="Pesquisar" id="botao_pesquisa" class="botao">
+        </div>
     </header>
     <main>
-        <article class="noticia">
-            <img src="../imgs/placeholders/placeholder.jpg" alt="foto_noticia">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae velit perspiciatis voluptatibus cupiditate tenetur sed minus? Officia, sint. Reiciendis laboriosam tempora sed dolores accusamus dolor nostrum nobis officia itaque!</p>
-        </article>
-        <article class="noticia">
-            <img src="../imgs/placeholders/placeholder.jpg" alt="foto_noticia">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae velit perspiciatis voluptatibus cupiditate tenetur sed minus? Officia, sint. Reiciendis laboriosam tempora sed dolores accusamus dolor nostrum nobis officia itaque!</p>
-        </article>
-        <article class="noticia">
-            <img src="../imgs/placeholders/placeholder.jpg" alt="foto_noticia">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae velit perspiciatis voluptatibus cupiditate tenetur sed minus? Officia, sint. Reiciendis laboriosam tempora sed dolores accusamus dolor nostrum nobis officia itaque!</p>
-        </article>
+        <div id="container_noticias">
+            <article class="noticia">
+                <img src="../imgs/placeholders/placeholder.jpg" alt="foto_noticia">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae velit perspiciatis voluptatibus cupiditate tenetur sed minus? Officia, sint. Reiciendis laboriosam tempora sed dolores accusamus dolor nostrum nobis officia itaque!</p>
+            </article>
+            <article class="noticia">
+                <img src="../imgs/placeholders/placeholder.jpg" alt="foto_noticia">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae velit perspiciatis voluptatibus cupiditate tenetur sed minus? Officia, sint. Reiciendis laboriosam tempora sed dolores accusamus dolor nostrum nobis officia itaque!</p>
+            </article>
+            <article class="noticia">
+                <img src="../imgs/placeholders/placeholder.jpg" alt="foto_noticia">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae velit perspiciatis voluptatibus cupiditate tenetur sed minus? Officia, sint. Reiciendis laboriosam tempora sed dolores accusamus dolor nostrum nobis officia itaque!</p>
+            </article>
+        </div>
         <div>
             <input type="button" value="Carregar mais" id="botao_mais">
         </div>
