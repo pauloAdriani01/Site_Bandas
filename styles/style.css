@@ -62,7 +62,7 @@ nav {
     border: none;
     outline: none;
     font-family: "Comic Relief", system-ui;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
@@ -188,7 +188,7 @@ article img {
     border: none;
     outline: none;
     font-family: "Comic Relief", system-ui;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;

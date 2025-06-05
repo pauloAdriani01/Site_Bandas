@@ -1,4 +1,4 @@
-const pag_ativa = window.location.pathname.toLowerCase(); //Leitura da página ativa
+const pag_ativa = location.pathname.toLowerCase(); //Leitura da página ativa
 
 //Funcionamento do Botão de Pesquisa (Index, Notícias, Posts e Bandas)
 
