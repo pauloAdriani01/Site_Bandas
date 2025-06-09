@@ -32,7 +32,7 @@ body {
 
 /* Login */
 
-.botao {
+#botao_voltar {
     background: linear-gradient(to right, #B42929, #606163);
     border: none;
     outline: none;
@@ -73,9 +73,10 @@ form {
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 1));; 
 }
 
-.input_informacao {
+.input_informacao_usuario, .input_informacao {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: auto;
     padding: 6px;
@@ -108,4 +109,31 @@ label {
     border-radius: 5px;
     color: #FFFFFF;
     margin-bottom: 1rem;
+}
+
+/* ------ RESPONSIVIDADE ------ */
+
+@media (min-width: 768px) {
+
+    #botao_voltar {
+        width: 5%;
+    }
+
+    form {
+        width: 40%;    
+    }
+
+    .barraInserir {
+        width: 80%;
+    }
+
+    .input_informacao {
+        width: 50%;
+    }
+
+    .botao_interno {
+        width: 50%;
+        cursor: pointer;
+    }
+
 }

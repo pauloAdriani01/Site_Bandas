@@ -128,20 +128,26 @@ p {
     filter: drop-shadow(10px 10px 10px #111111);
 }
 
-#noticia-principal, .noticia-aside {
+h2 {
+    font-family: "Tagesschrift", system-ui;
+    filter: drop-shadow(5px 5px 5px #000000);
+}
+
+#noticia_index, #post_index {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
     padding: auto;
-    background-color: #ffffff36;
-    width: 70%;
+    width: 60%;
     margin-bottom: 30px;
     border-radius: 5%;
 }
 
-#noticia-principal {
-    border: 1px solid;
+.conteudo_index {
+    background-color: #ffffff36;
+    border: 5px solid;
+    border-radius: 5%;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-name: troca_borda;
@@ -301,6 +307,27 @@ footer {
 
 @media (min-width: 768px) {
 
+    /* Configurações Gerais */
+
+    .botao {
+        cursor: pointer;
+    }
+
+    #botao_mais {
+        cursor: pointer;
+    }
+
+    /* Index */
+
+    #main_index {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #noticia_index, #post_index {
+        width: 30%;
+    }
+
     /* --- Notícias --- */
     #container_noticias {
         display: flex;
@@ -308,6 +335,17 @@ footer {
     }
 
     .noticia {
+        width: 30%;
+    }
+
+    /* --- Posts --- */
+
+    #container_posts {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .post {
         width: 30%;
     }
 

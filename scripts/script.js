@@ -13,6 +13,28 @@ if (pag_ativa.includes("index") || pag_ativa.includes("noticias") || pag_ativa.i
     }
 }
 
+//Funcionamento do Botão de "Pesquisar" no "Corpo" da paágina (Notícias, Posts e Bandas)
+
+if (pag_ativa.includes("noticias") || pag_ativa.includes("posts") || pag_ativa.includes("bandas")) {
+    const obj_botao_mais = document.querySelector("#botao_mais");
+
+    obj_botao_mais.addEventListener("click", funCarregarMais);
+
+    function funCarregarMais() {
+        if (pag_ativa.includes("noticias")) {
+            alert("Pesquisando mais notícias...");
+
+        } else if (pag_ativa.includes("posts")) {
+            alert("Pesquisando mais posts...");
+
+        } else if (pag_ativa.includes("bandas")) {
+            alert("Pesquisando mais bandas...");
+
+        }
+    }
+
+}
+
 // Funcionamento do Botão "Carregar Mais" (Notícias, Posts e Bandas)
 
 if (pag_ativa.includes("noticias") || pag_ativa.includes("posts") || pag_ativa.includes("bandas")) {

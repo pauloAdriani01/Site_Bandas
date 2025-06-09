@@ -44,6 +44,11 @@ function funMudaFundo() {
         obj_body.style.background = 'radial-gradient(#CBCBCB, #A6A6A6)';
         obj_body.style.color = '#000000';
 
+        array_barraPesquisa.forEach(obj_barraPesquisa => {
+            obj_barraPesquisa.style.background = '#C0C0C0';
+            obj_barraPesquisa.style.color = '#000000';
+        })
+
         //Navbar
         obj_navSup.style.background = 'radial-gradient(#EEEEEE, #FFFFFF)';
         obj_navInf.style.background = 'radial-gradient(#DDDDDD, #CBCBCB)';
@@ -89,6 +94,12 @@ function funMudaFundo() {
         //Principal
         obj_body.style.background = 'radial-gradient(#555555, #444444)';
         obj_body.style.color = '#FFFFFF';
+
+        array_barraPesquisa.forEach(obj_barraPesquisa => {
+            obj_barraPesquisa.style.background = '#979797';
+            obj_barraPesquisa.style.color = '#FFFFFF';
+        })
+
 
         //Navbar
         obj_navSup.style.background = 'radial-gradient(#111111, #000000)';
