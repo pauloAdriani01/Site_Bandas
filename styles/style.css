@@ -116,6 +116,11 @@ a {
 
 /* --- Index --- */
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 #titulo {
     margin-top: 150px;
     padding: 10px;
@@ -135,13 +140,18 @@ h2 {
 
 #noticia_index, #post_index {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin: auto;
     padding: auto;
-    width: 60%;
+    width: 90%;
     margin-bottom: 30px;
     border-radius: 5%;
+}
+
+.seta_index {
+    width: 100%;
 }
 
 .conteudo_index {
