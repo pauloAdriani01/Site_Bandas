@@ -133,11 +133,6 @@ p {
     filter: drop-shadow(10px 10px 10px #111111);
 }
 
-h2 {
-    font-family: "Tagesschrift", system-ui;
-    filter: drop-shadow(5px 5px 5px #000000);
-}
-
 #noticia_index, #post_index {
     display: flex;
     flex-direction: row;
