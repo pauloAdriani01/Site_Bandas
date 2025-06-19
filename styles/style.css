@@ -73,7 +73,6 @@ nav {
     flex-direction: row;
     align-items: center;
     margin: 0;
-    padding: auto;
 }
 
 #navInf {
@@ -139,7 +138,6 @@ p {
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: auto;
     width: 90%;
     margin-bottom: 30px;
     border-radius: 5%;
@@ -184,7 +182,6 @@ article img {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    padding: auto;
     background-color: #ffffff36;
     width: 70%;
     margin-bottom: 30px;
@@ -216,7 +213,6 @@ article img {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    padding: auto;
     background-color: #ffffff36;
     width: 70%;
     margin-bottom: 30px;
@@ -327,10 +323,54 @@ footer {
     #main_index {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    #index_container {
+        display: flex;
+        justify-content: space-between; 
+        width: 90%; 
+        margin: auto; 
+    }
+
+    #noticia_index {
+        height: 600px;
     }
 
     #noticia_index, #post_index {
-        width: 30%;
+        flex: 1; 
+        margin: 0 10px; 
+        min-width: 300px; 
+    }
+
+    .seta_index {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        cursor: pointer; 
+    }
+
+    .conteudo_index {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: #ffffff20;
+        border-radius: 10px;
+        min-height: 400px;
+    }
+
+    .conteudo_index img {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 10px;
     }
 
     /* --- Notícias --- */
@@ -341,6 +381,7 @@ footer {
 
     .noticia {
         width: 30%;
+        height: 500px;
     }
 
     /* --- Posts --- */

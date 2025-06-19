@@ -16,19 +16,22 @@ if (pag_ativa.includes("index") || pag_ativa.includes("noticias") || pag_ativa.i
 //Funcionamento do Botão de "Pesquisar" no "Corpo" da paágina (Notícias, Posts e Bandas)
 
 if (pag_ativa.includes("noticias") || pag_ativa.includes("posts") || pag_ativa.includes("bandas")) {
-    const obj_botao_mais = document.querySelector("#botao_mais");
+    const obj_botao_pesquisa_corpo = document.querySelector("#botao_pesquisa_corpo");
 
-    obj_botao_mais.addEventListener("click", funCarregarMais);
+    obj_botao_pesquisa_corpo.addEventListener("click", funPesquisaCorpo);
 
-    function funCarregarMais() {
+    function funPesquisaCorpo() {
         if (pag_ativa.includes("noticias")) {
             alert("Pesquisando mais notícias...");
+            location.reload();
 
         } else if (pag_ativa.includes("posts")) {
             alert("Pesquisando mais posts...");
+            location.reload();  
 
         } else if (pag_ativa.includes("bandas")) {
             alert("Pesquisando mais bandas...");
+            location.reload();
 
         }
     }
@@ -45,12 +48,15 @@ if (pag_ativa.includes("noticias") || pag_ativa.includes("posts") || pag_ativa.i
     function funCarregarMais() {
         if (pag_ativa.includes("noticias")) {
             alert("Carregando mais notícias...");
+            location.reload();
 
         } else if (pag_ativa.includes("posts")) {
             alert("Carregando mais posts...");
+            location.reload();
 
         } else if (pag_ativa.includes("bandas")) {
             alert("Carregando mais bandas...");
+            location.reload();
 
         }
     }
@@ -88,4 +94,19 @@ if (pag_ativa.includes("login")) {
         location.reload();
     }
 
+}
+
+//Funcionamento do "click" nas bandas da tabela (Bandas)
+
+if (pag_ativa.includes("bandas")) {
+    const array_bandas = document.querySelectorAll(".banda");
+
+    array_bandas.forEach(obj_banda => {
+        obj_banda.addEventListener("click", funBanda);
+    });
+
+    function funBanda() {
+        alert("Redirecionando para a página da banda...");
+        location.reload();
+    }
 }

@@ -3,20 +3,16 @@
 // --- Configuração das setas ---
 
 //Criação dos Objetos
-const array_seta_esquerda = document.querySelectorAll(".seta_esquerda");
-const array_seta_direita = document.querySelectorAll(".seta_direita");
+const obj_seta_esquerda = document.querySelector("#seta_esquerda_noticia");
+const obj_seta_direita = document.querySelector("#seta_direita_noticia");
 
 //Criação dos eventos
-array_seta_esquerda.forEach(obj_seta_esquerda => {
-    obj_seta_esquerda.addEventListener("click", funSetaEsquerda);
-})
+obj_seta_esquerda.addEventListener("click", funSetaEsquerdaNoticia);
+obj_seta_direita.addEventListener("click", funSetaDireitaNoticia);
 
-array_seta_direita.forEach(obj_seta_direita => {
-    obj_seta_direita.addEventListener("click", funSetaDireita);
-})
 
 //Criação das funções
-function funSetaEsquerda() {
+function funSetaEsquerdaNoticia() {
     num_noticia--;
     if ( num_noticia < 0 ) {
         num_noticia = (noticias.length - 1)
@@ -24,7 +20,7 @@ function funSetaEsquerda() {
     funExibeNoticia(num_noticia);
 }
 
-function funSetaDireita() {
+function funSetaDireitaNoticia() {
     num_noticia++;
     if (num_noticia == noticias.length) {
         num_noticia = 0;
@@ -36,14 +32,16 @@ function funSetaDireita() {
 
 //Criação dos Objetos e Variável
 const obj_foto_noticia = document.querySelector("#foto_noticia");
+const obj_titulo_noticia = document.querySelector("#titulo_noticia");
 const obj_prg_noticia = document.querySelector("#prg_noticia");
 
 let num_noticia = 0;
 
 function funExibeNoticia(num_noticia) {
     obj_foto_noticia.src = noticias[num_noticia].foto;
-    obj_prg_noticia.innerHTML = noticias[num_noticia].titulo;
+    obj_titulo_noticia.innerHTML = noticias[num_noticia].titulo;
+    obj_prg_noticia.innerHTML = noticias[num_noticia].sub;
 }
 
-funExibeNoticia(0);
+funExibeNoticia(num_noticia);
 
