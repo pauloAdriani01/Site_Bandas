@@ -59,15 +59,6 @@ function funMudaFundo() {
 
         //Main
 
-        /* --- Index ---*/
-        if (pag_ativa_cor.includes("index")) {
-            obj_noticiaPrincipal.style.background = '#A7A7A7';
-
-            array_noticiaAside.forEach(obj_noticiaAside => {
-                obj_noticiaAside.style.background = '#A7A7A7';
-            })
-        }
-
         /* --- Noticias --- */
 
         array_noticia.forEach(obj_noticia => {
@@ -110,15 +101,6 @@ function funMudaFundo() {
         })
 
         //Main
-
-        /* --- Index --- */
-        if (pag_ativa_cor.includes("index")) {  
-            obj_noticiaPrincipal.style.background = '#ffffff36';
-
-            array_noticiaAside.forEach(obj_noticiaAside => {
-                obj_noticiaAside.style.background = '#ffffff36';
-            })
-        }
 
         /* --- Noticias --- */
         array_noticia.forEach(obj_noticia => {
