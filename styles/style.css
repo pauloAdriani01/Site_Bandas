@@ -52,7 +52,7 @@ nav {
     transition: 0.3s;
 }
 
-#barraPesquisa:focus {
+.barraPesquisa:focus {
     border: 2px solid #e23434;
     outline: none;
 }
@@ -385,12 +385,27 @@ footer {
         width: 100%;
         max-width: 200px;
         border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .conteudo_index img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
     }
 
     /* --- Notícias --- */
     #container_noticias {
         display: flex;
         flex-direction: row;
+    }
+
+    #container_noticias img {
+        transition: transform 0.3s ease;
+    }
+
+    #container_noticias img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
     }
 
     .noticia {
@@ -404,6 +419,15 @@ footer {
         display: flex;
         flex-direction: row;
     }
+
+    #container_posts img {
+        transition: transform 0.3s ease;
+    }
+
+    #container_posts img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }   
 
     .post {
         width: 30%;

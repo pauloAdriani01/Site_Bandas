@@ -75,27 +75,6 @@ function funRede() {
         alert("Redirecionando para a rede social...");
 }
 
-//Funcionamento do Botão de "Login" + Botão de "Criar Conta" (Login)
-
-if (pag_ativa.includes("login")) {
-    const obj_botao_login = document.querySelector("#botao_login");
-    const obj_botao_criarConta = document.querySelector("#botao_criarConta");
-
-    obj_botao_login.addEventListener("click", funLogin);
-    obj_botao_criarConta.addEventListener("click", funCriarConta);
-
-    function funLogin() {
-        alert("Realizando seu login...");
-        location.reload();
-    }
-
-    function funCriarConta() {
-        alert("Redirecionando para a página de criar conta...");
-        location.reload();
-    }
-
-}
-
 //Funcionamento do "click" nas bandas da tabela (Bandas)
 
 if (pag_ativa.includes("bandas")) {
@@ -110,3 +89,74 @@ if (pag_ativa.includes("bandas")) {
         location.reload();
     }
 }
+
+//Funcionamento do "Envio" do Formulário + Botão de "Criar Conta" (Login)
+
+if (pag_ativa.includes("login")) {
+    const obj_form = document.querySelector("form");
+    const obj_botao_criarConta = document.querySelector("#botao_criarConta");
+
+    obj_form.addEventListener("submit", (envio) => {
+        envio.preventDefault();
+
+        const obj_email = document.querySelector("#email");
+        const obj_senha = document.querySelector("#senha");
+
+        if (obj_email.value === "" || obj_senha.value === "") {
+            return;
+        }
+
+        alert("Efetuando seu login...");
+        location.reload();
+    });
+
+    obj_botao_criarConta.addEventListener("click", funCriarConta);
+
+    function funCriarConta() {
+        alert("Redirecionando para a página de criar conta...");
+        location.reload();
+    }
+
+}
+
+//Funcionamento do "click" nas Notícias e nos Posts (Index)
+
+if (pag_ativa.includes("index")) {
+    const obj_foto_noticia = document.querySelector("#foto_noticia");
+    const obj_foto_post = document.querySelector("#foto_post");
+    const obj_foto_usuario = document.querySelector("#foto_usuario");
+
+    obj_foto_noticia.addEventListener("click", funNoticia);
+    obj_foto_post.addEventListener("click", funPost);
+    obj_foto_usuario.addEventListener("click", funUsuario);
+
+    function funNoticia() {
+        alert("Redirecionando para notícia.");
+        location.reload();
+    }
+
+    function funPost() {
+        alert("Redirecionando para o post.");
+        location.reload();
+    }
+
+    function funUsuario() {
+        alert("Redirecionando para o perfil.");
+        location.reload();
+    }
+ 
+}
+
+//Funcionamento do "Formulário de Pesquisa" (Index, Notícias, Posts e Bandas)
+
+if (pag_ativa.includes("index") || pag_ativa.includes("noticias") || pag_ativa.includes("posts") || pag_ativa.includes("bandas")) {
+    const forms_pesquisa = document.querySelectorAll("form");
+
+    forms_pesquisa.forEach(form_pesquisa => {
+        form_pesquisa.addEventListener("submit", (envio) => {
+            envio.preventDefault();
+            alert("Pesquisando...");
+        });
+    });
+}
+
