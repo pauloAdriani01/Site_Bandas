@@ -1,43 +1,5 @@
 const pag_ativa = location.pathname.toLowerCase(); //Leitura da página ativa
 
-//Funcionamento do Botão de Pesquisa (Index, Notícias, Posts e Bandas)
-
-if (pag_ativa.includes("index") || pag_ativa.includes("noticias") || pag_ativa.includes("posts") || pag_ativa.includes("bandas")) {
-    const obj_botao_pesquisa = document.querySelector("#botao_pesquisa");
-
-    obj_botao_pesquisa.addEventListener("click", funPesquisa);
-
-    function funPesquisa() {
-            alert("Pesquisando...");
-            location.reload();
-    }
-}
-
-//Funcionamento do Botão de "Pesquisar" no "Corpo" da paágina (Notícias, Posts e Bandas)
-
-if (pag_ativa.includes("noticias") || pag_ativa.includes("posts") || pag_ativa.includes("bandas")) {
-    const obj_botao_pesquisa_corpo = document.querySelector("#botao_pesquisa_corpo");
-
-    obj_botao_pesquisa_corpo.addEventListener("click", funPesquisaCorpo);
-
-    function funPesquisaCorpo() {
-        if (pag_ativa.includes("noticias")) {
-            alert("Pesquisando mais notícias...");
-            location.reload();
-
-        } else if (pag_ativa.includes("posts")) {
-            alert("Pesquisando mais posts...");
-            location.reload();  
-
-        } else if (pag_ativa.includes("bandas")) {
-            alert("Pesquisando mais bandas...");
-            location.reload();
-
-        }
-    }
-
-}
-
 // Funcionamento do Botão "Carregar Mais" (Notícias, Posts e Bandas)
 
 if (pag_ativa.includes("noticias") || pag_ativa.includes("posts") || pag_ativa.includes("bandas")) {
@@ -150,13 +112,31 @@ if (pag_ativa.includes("index")) {
 //Funcionamento do "Formulário de Pesquisa" (Index, Notícias, Posts e Bandas)
 
 if (pag_ativa.includes("index") || pag_ativa.includes("noticias") || pag_ativa.includes("posts") || pag_ativa.includes("bandas")) {
-    const forms_pesquisa = document.querySelectorAll("form");
+    const form_pesquisa = document.querySelector("#nav_pesquisa");
 
-    forms_pesquisa.forEach(form_pesquisa => {
-        form_pesquisa.addEventListener("submit", (envio) => {
-            envio.preventDefault();
+    if (form_pesquisa) {
+        form_pesquisa.addEventListener("submit", (e) => {
+            e.preventDefault();
             alert("Pesquisando...");
         });
-    });
+    }
+}
+
+// Funcionamento do Botão de Pesquisa no Corpo (Notícias, Posts e Bandas)
+
+if (pag_ativa.includes("noticias") || pag_ativa.includes("posts") || pag_ativa.includes("bandas")) {
+    const botao_pesquisa_corpo = document.querySelector("#botao_pesquisa_corpo");
+
+    if (botao_pesquisa_corpo) {
+        botao_pesquisa_corpo.addEventListener("click", () => {
+            if (pag_ativa.includes("noticias")) {
+                alert("Pesquisando mais notícias...");
+            } else if (pag_ativa.includes("posts")) {
+                alert("Pesquisando mais posts...");
+            } else if (pag_ativa.includes("bandas")) {
+                alert("Pesquisando mais bandas...");
+            }
+        });
+    }
 }
 
