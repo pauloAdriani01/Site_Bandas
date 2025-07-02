@@ -1,4 +1,4 @@
-# WebRock
+# WebRock - English Review
 This is just a simple website I made that simulates a social media and news platform for people who enjoy rock music.
 
 ### Website Breakdown
@@ -18,15 +18,22 @@ I added a search bar and a button at the top of the "main" element of the html, 
 <br>
 Plus, I have also added a button to, supposedly, load more news.
 
-### Posts
+#### Posts
 Just like on the "Noticias" page, we can see how the page of the users posts would work (I used the same posts as the ones on the cards from the index page).
 <br>
 Also, similar to the "Noticias", I added a search bar and a button at the top of the "main" element in the html, just to simulate how users would search for posts on the website.
 <br>
 And last but not least, I also added a button to (supposedly) load more users posts.
 
-
+#### Bandas
+On this page, we have an html table to simulate the registered bands on the site.
+<br>
+The idea was that people of the website would be able to register bands on the site, to display information of them.
+<br>
+And this page also has the same search methods of "Noticias" and "Posts".
 
 #
+
+# WebRock - Revisão em Português
 Apenas um website simples que eu fiz, simulando uma rede social e uma plataforma de notícias para pessoas que gostam de rock.
-#
+
