@@ -32,6 +32,11 @@ The idea was that people of the website would be able to register bands on the s
 <br>
 And this page also has the same search methods of "Noticias" and "Posts".
 
+#### Login
+A simple login page with an HTML form to enter login credentials.
+<br>
+It also has a button that would redirect users to a sign up page.
+
 #
 
 # WebRock - Revisão em Português
