@@ -83,3 +83,15 @@ Uma simples página de login com um formulário HTML para inserir credenciais do
 Também contém um botão que redirecionaria os usuários para uma página de cadastro.
 
 #
+
+<div>
+  Sources/Fontes:
+  <br>
+  https://whiplash.net/materias/news_682/370498-metallica.html
+  <br>
+  https://kissfm.com.br/king-diamond-primeira-parte-de-nova-trilogia-sai-em-2026/
+  <br>
+  https://www.radiorock.com.br/noticias/kiko-loureiro-leva-marty-friedman-a-tocar-classicos-da-musica-brasileira-em-turne-internacional
+</div>
+
+#
