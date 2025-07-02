@@ -19,6 +19,13 @@ I added a search bar and a button at the top of the "main" element of the html, 
 Plus, I have also added a button to, supposedly, load more news.
 
 ### Posts
+Just like on the "Noticias" page, we can see how the page of the users posts would work (I used the same posts as the ones on the cards from the index page).
+<br>
+Also, similar to the "Noticias", I added a search bar and a button at the top of the "main" element in the html, just to simulate how users would search for posts on the website.
+<br>
+And last but not least, I also added a button to (supposedly) load more users posts.
+
+
 
 #
 Apenas um website simples que eu fiz, simulando uma rede social e uma plataforma de notícias para pessoas que gostam de rock.
